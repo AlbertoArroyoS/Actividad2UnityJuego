@@ -1,0 +1,127 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEditor.EditorTools;
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+
+    //Atributos
+    private float moveHorizontal;
+    private float moveVertical;
+    private Rigidbody2D rigidPlayer;
+    //velocidad del jugador, si es floar poner f al final
+    private float speed = 4.5f;
+    private SpriteRenderer render;
+    private float jumpForce = 7.05f;
+    private bool isOnGround = true;
+    //puntos que valen los objetos
+    private int puntosTotales;
+    private int puntosManzana = 1;
+    private int puntosMoneda = 2;
+    private int puntosGema = 3;
+    public TextMeshProUGUI PuntosTexto;
+
+    private AudioSource audioSourcePlayer;
+    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip;
+
+    [Header("Animacion")]
+    private Animator animator;
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //objeto.componente.propiedad
+        //objeto.componente.metodo()
+        rigidPlayer = GetComponent<Rigidbody2D>();
+        render = GetComponent<SpriteRenderer>();
+        audioSourcePlayer = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
+        animator.SetBool("enSuelo", true);
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //salto
+        if(Input.GetKeyDown(KeyCode.UpArrow) && isOnGround) 
+        {
+
+            animator.SetBool("enSuelo", false);
+            audioSourcePlayer.PlayOneShot(saltoClip);
+            rigidPlayer.AddForce(Vector2.up* jumpForce, ForceMode2D.Impulse);
+
+        }
+        //si no esta en tierra que coja la animacion de salto
+        if (isOnGround == false)
+        {
+            animator.SetBool("enSuelo", false);
+        }
+        if(isOnGround == true)
+        {
+            animator.SetBool("enSuelo", true);
+        }
+            
+        
+  
+
+        //movimiento
+        moveHorizontal = Input.GetAxis("Horizontal");
+        //para la animacion
+        animator.SetFloat("Horizontal",Mathf.Abs (moveHorizontal));
+
+        if (moveHorizontal < 0)
+        {
+            render.flipX = true;
+        }
+        if (moveHorizontal > 0)
+        {
+            render.flipX = false;
+        }
+        //la posicion mas actual + lo que sea la tecla que se pulse y velocidad a la que se esta moviendo con la variable speed
+        transform.position += new Vector3(moveHorizontal,0,0) * Time.deltaTime*speed;
+        
+
+
+    }
+    //cuando se tocan
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isOnGround = true;
+    }
+    //cuando no se esta tocando el player con el suelo
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isOnGround = false;
+    }
+
+    //Para sumar puntos con los objetos
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Manzana")
+        {
+            audioSourcePlayer.PlayOneShot(manzanaClip);
+            puntosTotales += puntosManzana;
+            //sacar mensaje por consola para depurar
+            //Debug.Log("Puntos " + puntosTotales);
+            Destroy(collision.gameObject);
+        }
+        if (collision.tag == "Moneda")
+        {
+            audioSourcePlayer.PlayOneShot(monedaClip);
+            puntosTotales += puntosMoneda;
+            Destroy(collision.gameObject);
+        }
+        if (collision.tag == "Gema")
+        {
+            audioSourcePlayer.PlayOneShot(gemaClip);
+            puntosTotales += puntosGema;
+            Destroy(collision.gameObject);
+        }
+        PuntosTexto.text = ("PUNTOS: " + puntosTotales.ToString());
+    }
+}
