@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     [Header("Animacion")]
     private Animator animator;
 
+    public Camera cameraPlayer;
+
 
 
     // Start is called before the first frame update
@@ -91,7 +93,19 @@ public class PlayerController : MonoBehaviour
     //cuando se tocan
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isOnGround = true;
+        if(collision.gameObject.tag == "Ground")
+        {
+            isOnGround = true;
+        }
+
+        if (collision.gameObject.tag == "Gordo" || collision.gameObject.tag == "Gedeon")
+        {
+            
+            //hacer que la camara no sea hija del player y que no se destruya con el player
+            cameraPlayer.transform.parent = null;
+            Destroy(gameObject);
+        }
+
     }
     //cuando no se esta tocando el player con el suelo
     private void OnCollisionExit2D(Collision2D collision)
