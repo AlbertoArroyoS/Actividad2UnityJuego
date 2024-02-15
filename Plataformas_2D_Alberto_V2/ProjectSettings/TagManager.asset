@@ -7,10 +7,6 @@ TagManager:
   - Manzana
   - Moneda
   - Gema
-  - Gordo
-  - Gedeon
-  - Suelo
-  - Enemigo
   layers:
   - Default
   - TransparentFX
