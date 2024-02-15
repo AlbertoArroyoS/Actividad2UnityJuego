@@ -645,7 +645,7 @@ GameObject:
   - component: {fileID: 791624491}
   m_Layer: 0
   m_Name: SueloTilemap
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31047,6 +31047,8 @@ MonoBehaviour:
   monedaClip: {fileID: 8300000, guid: 7bd6b897eb5ca4b7d88a205c4a51640c, type: 3}
   atacaClip: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
   muerteExplosionClip: {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
+  cameraPlayer: {fileID: 519420031}
+  explosionPrefab: {fileID: 329567666899258255, guid: 9e5ab1b46222b034486721de333f2ee7, type: 3}
 --- !u!82 &1506676658
 AudioSource:
   m_ObjectHideFlags: 0

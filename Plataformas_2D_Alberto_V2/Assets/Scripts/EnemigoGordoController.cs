@@ -18,23 +18,32 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player").transform;
+        // Buscar el objeto del jugador solo si no es nulo
+        GameObject playerObject = GameObject.Find("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //movernos hacia el player, moveTowards del punto A a B
-        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-        if(transform.position.x > player.position.x)
+        if (player != null)
         {
-            //voltear
-            spriteRenderer.flipX = true;
+            //movernos hacia el player, moveTowards del punto A a B
+            transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            if (transform.position.x > player.position.x)
+            {
+                //voltear
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
         }
-        else
-        {
-            spriteRenderer.flipX = false;
-        }
+        
     }
 }

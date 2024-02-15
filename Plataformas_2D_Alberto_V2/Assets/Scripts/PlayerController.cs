@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer render;
     private float jumpForce = 7.05f;
     private bool isOnGround = true;
+    private bool esGolpeado = false;
     //puntos que valen los objetos
     private int puntosTotales;
     private int puntosManzana = 1;
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     private AudioSource audioSourcePlayer;
     public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip;
+    public Camera cameraPlayer;
+    public GameObject explosionPrefab;
 
     [Header("Animacion")]
     private Animator animator;
@@ -48,7 +51,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //salto
-        if(Input.GetKeyDown(KeyCode.UpArrow) && isOnGround) 
+        if(Input.GetKeyDown(KeyCode.UpArrow) && isOnGround && esGolpeado == false) 
         {
 
             animator.SetBool("enSuelo", false);
@@ -57,11 +60,11 @@ public class PlayerController : MonoBehaviour
 
         }
         //si no esta en tierra que coja la animacion de salto
-        if (isOnGround == false)
+        if (isOnGround == false && esGolpeado == false)
         {
             animator.SetBool("enSuelo", false);
         }
-        if(isOnGround == true)
+        if(isOnGround == true && esGolpeado == false)
         {
             animator.SetBool("enSuelo", true);
         }
@@ -91,7 +94,23 @@ public class PlayerController : MonoBehaviour
     //cuando se tocan
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isOnGround = true;
+        if (collision.gameObject.tag == "Suelo")
+        {
+            isOnGround = true;
+            esGolpeado = false;
+        }
+
+        if (collision.gameObject.tag == "Gordo")
+        {
+            esGolpeado = true;
+            cameraPlayer.transform.parent = null;
+            Instantiate(explosionPrefab, transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
+            Destroy(gameObject);
+        }
+
+
+
+
     }
     //cuando no se esta tocando el player con el suelo
     private void OnCollisionExit2D(Collision2D collision)
