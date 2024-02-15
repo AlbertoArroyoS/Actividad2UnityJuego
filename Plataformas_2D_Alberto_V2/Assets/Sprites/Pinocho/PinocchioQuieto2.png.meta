@@ -1,34 +1,37 @@
 fileFormatVersion: 2
-guid: c0e5b5a535cf1544481c9833bfac55e9
+guid: 3bf48e4de7d332e4b80ef64061eb4291
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -859900650196482536
-    second: Pinocchio_Sprites4_sin_fondo_0
+      213: 1455861153948361783
+    second: PinocchioQuieto2_0
   - first:
-      213: 4646323670265684415
-    second: Pinocchio_Sprites4_sin_fondo_1
+      213: 8716284403475646676
+    second: PinocchioQuieto2_1
   - first:
-      213: 71869702544968758
-    second: Pinocchio_Sprites4_sin_fondo_2
+      213: -2482337088993796286
+    second: PinocchioQuieto2_2
   - first:
-      213: 2050209836421067961
-    second: Pinocchio_Sprites4_sin_fondo_3
+      213: 475931100154113785
+    second: PinocchioQuieto2_3
   - first:
-      213: 6135866002268548229
-    second: Pinocchio_Sprites4_sin_fondo_4
+      213: -8350595761060806791
+    second: PinocchioQuieto2_4
   - first:
-      213: 3502172537380811825
-    second: Pinocchio_Sprites4_sin_fondo_5
+      213: -8241651162868523389
+    second: PinocchioQuieto2_5
   - first:
-      213: 8865866937771015497
-    second: Pinocchio_Sprites4_sin_fondo_6
+      213: -5429247004596216036
+    second: PinocchioQuieto2_6
   - first:
-      213: -1434086302970053790
-    second: Pinocchio_Sprites4_sin_fondo_7
+      213: 1774686017803187458
+    second: PinocchioQuieto2_7
   - first:
-      213: -147376165418579527
-    second: Pinocchio_Sprites4_sin_fondo_8
+      213: 7082407562167469832
+    second: PinocchioQuieto2_8
+  - first:
+      213: -7055631441505204586
+    second: PinocchioQuieto2_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 28
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,211 +140,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_0
+      name: PinocchioQuieto2_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 7
-        width: 51
-        height: 40
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b997fde9e2cb4245acb31ff209d299a
-      internalID: 1429849314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_1
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 7
+        x: 0
+        y: 0
         width: 49
-        height: 41
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 326bd90c08016a6438b73676c4e5a882
-      internalID: 1705992820
+      spriteID: 734e16b8102443410800000000000000
+      internalID: 1455861153948361783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_2
+      name: PinocchioQuieto2_1
       rect:
         serializedVersion: 2
-        x: 107
-        y: 7
+        x: 52
+        y: 0
+        width: 46
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8817eeb7676f870800000000000000
+      internalID: 8716284403475646676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinocchioQuieto2_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
         width: 42
-        height: 42
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 87a5883f6e11d4247a2e1dc77a99e16b
-      internalID: 1588829546
+      spriteID: 24f5fbdc197fc8dd0800000000000000
+      internalID: -2482337088993796286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_3
+      name: PinocchioQuieto2_3
       rect:
         serializedVersion: 2
-        x: 150
-        y: 7
+        x: 145
+        y: 0
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe2f3260d8da9600800000000000000
+      internalID: 475931100154113785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinocchioQuieto2_4
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
         width: 38
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2bb9a59a1adfcc74e98ec28912f1ad6e
-      internalID: 317743708
+      spriteID: 97f761f0669bc1c80800000000000000
+      internalID: -8350595761060806791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_4
+      name: PinocchioQuieto2_5
       rect:
         serializedVersion: 2
-        x: 190
-        y: 7
-        width: 39
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52911121ca18354429b84ff5b9322052
-      internalID: 224304676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_5
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 7
-        width: 41
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 757615cb85158654da3ecbf2d2c1e92e
-      internalID: -117851169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_6
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 7
+        x: 224
+        y: 0
         width: 40
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4678453b5ea824248961b03d00144b77
-      internalID: 939320673
+      spriteID: 38e598afee5cf9d80800000000000000
+      internalID: -8241651162868523389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_7
+      name: PinocchioQuieto2_6
       rect:
         serializedVersion: 2
-        x: 316
-        y: 7
-        width: 41
-        height: 45
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 268
+        y: 0
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 06f5c6164e36fb346867f28fe78b0c4d
-      internalID: -990590860
+      spriteID: c1f503d5d9077a4b0800000000000000
+      internalID: -5429247004596216036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_8
+      name: PinocchioQuieto2_7
       rect:
         serializedVersion: 2
-        x: 360
-        y: 7
-        width: 44
-        height: 43
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 310
+        y: 0
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a969f27655562ae45b07296772320278
-      internalID: -1647252431
+      spriteID: 205f20fc783f0a810800000000000000
+      internalID: 1774686017803187458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_9
+      name: PinocchioQuieto2_8
       rect:
         serializedVersion: 2
-        x: 405
-        y: 7
-        width: 50
-        height: 41
+        x: 354
+        y: 0
+        width: 43
+        height: 49
       alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d7aaf40be2239fe458e4d3e47eb2b1d5
-      internalID: 1700932729
+      spriteID: 80748815724c94260800000000000000
+      internalID: 7082407562167469832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinocchioQuieto2_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 48
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6964107169c551e90800000000000000
+      internalID: -7055631441505204586
       vertices: []
       indices: 
       edges: []
@@ -349,7 +352,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aef391726af9755448253745a579b970
+    spriteID: 7f4db21dbb156974c9ff40ce351ec018
     internalID: 0
     vertices: []
     indices: 
@@ -357,16 +360,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pinocchio_Sprites4_sin_fondo_0: 1429849314
-      Pinocchio_Sprites4_sin_fondo_1: 1705992820
-      Pinocchio_Sprites4_sin_fondo_2: 1588829546
-      Pinocchio_Sprites4_sin_fondo_3: 317743708
-      Pinocchio_Sprites4_sin_fondo_4: 224304676
-      Pinocchio_Sprites4_sin_fondo_5: -117851169
-      Pinocchio_Sprites4_sin_fondo_6: 939320673
-      Pinocchio_Sprites4_sin_fondo_7: -990590860
-      Pinocchio_Sprites4_sin_fondo_8: -1647252431
-      Pinocchio_Sprites4_sin_fondo_9: 1700932729
+      PinocchioQuieto2_0: 1455861153948361783
+      PinocchioQuieto2_1: 8716284403475646676
+      PinocchioQuieto2_2: -2482337088993796286
+      PinocchioQuieto2_3: 475931100154113785
+      PinocchioQuieto2_4: -8350595761060806791
+      PinocchioQuieto2_5: -8241651162868523389
+      PinocchioQuieto2_6: -5429247004596216036
+      PinocchioQuieto2_7: 1774686017803187458
+      PinocchioQuieto2_8: 7082407562167469832
+      PinocchioQuieto2_9: -7055631441505204586
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

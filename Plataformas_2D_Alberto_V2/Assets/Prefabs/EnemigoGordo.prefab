@@ -124,17 +124,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.18442059, y: 0.046105295}
+  m_Offset: {x: 0.37252796, y: -0.33208025}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.95, y: 2.025}
+    pivot: {x: 0.5, y: 0.65}
+    oldSize: {x: 1.5833334, y: 1.6458334}
     newSize: {x: 2.4375, y: 2.53125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.0686588, y: 2.070197}
+  m_Size: {x: 1.2453954, y: 1.3138258}
   m_EdgeRadius: 0
 --- !u!50 &969766837442415070
 Rigidbody2D:

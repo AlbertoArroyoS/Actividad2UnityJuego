@@ -1,34 +1,58 @@
 fileFormatVersion: 2
-guid: c0e5b5a535cf1544481c9833bfac55e9
+guid: d323cd646a383d747b4afb0775464779
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -859900650196482536
-    second: Pinocchio_Sprites4_sin_fondo_0
+      213: -6644582616962206190
+    second: PinochoPatada2_0
   - first:
-      213: 4646323670265684415
-    second: Pinocchio_Sprites4_sin_fondo_1
+      213: 6078605364778401215
+    second: PinochoPatada2_1
   - first:
-      213: 71869702544968758
-    second: Pinocchio_Sprites4_sin_fondo_2
+      213: -2262450526551314569
+    second: PinochoPatada2_2
   - first:
-      213: 2050209836421067961
-    second: Pinocchio_Sprites4_sin_fondo_3
+      213: 7783289219713024057
+    second: PinochoPatada2_3
   - first:
-      213: 6135866002268548229
-    second: Pinocchio_Sprites4_sin_fondo_4
+      213: -1406336572862659560
+    second: PinochoPatada2_4
   - first:
-      213: 3502172537380811825
-    second: Pinocchio_Sprites4_sin_fondo_5
+      213: 96266351522731144
+    second: PinochoPatada2_5
   - first:
-      213: 8865866937771015497
-    second: Pinocchio_Sprites4_sin_fondo_6
+      213: -3009341122270642848
+    second: PinochoPatada2_6
   - first:
-      213: -1434086302970053790
-    second: Pinocchio_Sprites4_sin_fondo_7
+      213: 4729483958099130456
+    second: PinochoPatada2_7
   - first:
-      213: -147376165418579527
-    second: Pinocchio_Sprites4_sin_fondo_8
+      213: -6922266079345654015
+    second: PinochoPatada2_8
+  - first:
+      213: 3406866432799879784
+    second: PinochoPatada2_9
+  - first:
+      213: 7178620225385934660
+    second: PinochoPatada2_10
+  - first:
+      213: 5316707934458863993
+    second: PinochoPatada2_11
+  - first:
+      213: -6512488485913868214
+    second: PinochoPatada2_12
+  - first:
+      213: -1279082614488790017
+    second: PinochoPatada2_13
+  - first:
+      213: -4055670338653104809
+    second: PinochoPatada2_14
+  - first:
+      213: 4127813943624298568
+    second: PinochoPatada2_15
+  - first:
+      213: 3177692526117555252
+    second: PinochoPatada2_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 28
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,211 +161,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_0
+      name: PinochoPatada2_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 7
-        width: 51
-        height: 40
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 0
+        y: 9
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0b997fde9e2cb4245acb31ff209d299a
-      internalID: 1429849314
+      spriteID: 2167b3b7053b9c3a0800000000000000
+      internalID: -6644582616962206190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_1
+      name: PinochoPatada2_1
       rect:
         serializedVersion: 2
-        x: 57
-        y: 7
-        width: 49
-        height: 41
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 36
+        y: 9
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 326bd90c08016a6438b73676c4e5a882
-      internalID: 1705992820
+      spriteID: fbd76699f5b8b5450800000000000000
+      internalID: 6078605364778401215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_2
+      name: PinochoPatada2_2
       rect:
         serializedVersion: 2
-        x: 107
-        y: 7
-        width: 42
-        height: 42
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 90
+        y: 9
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 87a5883f6e11d4247a2e1dc77a99e16b
-      internalID: 1588829546
+      spriteID: 77f630bab392a90e0800000000000000
+      internalID: -2262450526551314569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_3
+      name: PinochoPatada2_3
       rect:
         serializedVersion: 2
-        x: 150
-        y: 7
-        width: 38
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 142
+        y: 9
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2bb9a59a1adfcc74e98ec28912f1ad6e
-      internalID: 317743708
+      spriteID: 9304f15ce4cc30c60800000000000000
+      internalID: 7783289219713024057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_4
+      name: PinochoPatada2_4
       rect:
         serializedVersion: 2
-        x: 190
-        y: 7
-        width: 39
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 211
+        y: 9
+        width: 61
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 52911121ca18354429b84ff5b9322052
-      internalID: 224304676
+      spriteID: 81481eb8650bb7ce0800000000000000
+      internalID: -1406336572862659560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_5
+      name: PinochoPatada2_5
       rect:
         serializedVersion: 2
-        x: 230
-        y: 7
-        width: 41
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 278
+        y: 9
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 757615cb85158654da3ecbf2d2c1e92e
-      internalID: -117851169
+      spriteID: 884d5569cb1065100800000000000000
+      internalID: 96266351522731144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_6
+      name: PinochoPatada2_6
       rect:
         serializedVersion: 2
-        x: 274
-        y: 7
-        width: 40
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 345
+        y: 9
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4678453b5ea824248961b03d00144b77
-      internalID: 939320673
+      spriteID: 06d3517813cac36d0800000000000000
+      internalID: -3009341122270642848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_7
+      name: PinochoPatada2_7
       rect:
         serializedVersion: 2
-        x: 316
-        y: 7
-        width: 41
-        height: 45
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 416
+        y: 9
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 06f5c6164e36fb346867f28fe78b0c4d
-      internalID: -990590860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_8
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 7
-        width: 44
-        height: 43
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a969f27655562ae45b07296772320278
-      internalID: -1647252431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pinocchio_Sprites4_sin_fondo_9
-      rect:
-        serializedVersion: 2
-        x: 405
-        y: 7
-        width: 50
-        height: 41
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7aaf40be2239fe458e4d3e47eb2b1d5
-      internalID: 1700932729
+      spriteID: 858386d1a9082a140800000000000000
+      internalID: 4729483958099130456
       vertices: []
       indices: 
       edges: []
@@ -349,7 +331,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aef391726af9755448253745a579b970
+    spriteID: bf67036eda447d7479d47f995d4b7629
     internalID: 0
     vertices: []
     indices: 
@@ -357,16 +339,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pinocchio_Sprites4_sin_fondo_0: 1429849314
-      Pinocchio_Sprites4_sin_fondo_1: 1705992820
-      Pinocchio_Sprites4_sin_fondo_2: 1588829546
-      Pinocchio_Sprites4_sin_fondo_3: 317743708
-      Pinocchio_Sprites4_sin_fondo_4: 224304676
-      Pinocchio_Sprites4_sin_fondo_5: -117851169
-      Pinocchio_Sprites4_sin_fondo_6: 939320673
-      Pinocchio_Sprites4_sin_fondo_7: -990590860
-      Pinocchio_Sprites4_sin_fondo_8: -1647252431
-      Pinocchio_Sprites4_sin_fondo_9: 1700932729
+      PinochoPatada2_0: -6644582616962206190
+      PinochoPatada2_1: 6078605364778401215
+      PinochoPatada2_2: -2262450526551314569
+      PinochoPatada2_3: 7783289219713024057
+      PinochoPatada2_4: -1406336572862659560
+      PinochoPatada2_5: 96266351522731144
+      PinochoPatada2_6: -3009341122270642848
+      PinochoPatada2_7: 4729483958099130456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

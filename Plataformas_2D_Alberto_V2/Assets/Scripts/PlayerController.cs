@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     //velocidad del jugador, si es floar poner f al final
     private float speed = 4.5f;
     private SpriteRenderer render;
-    private float jumpForce = 7.05f;
+    private float jumpForce = 7.50f;
     private bool isOnGround = true;
     private bool esGolpeado = false;
     //puntos que valen los objetos
@@ -50,8 +50,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //patada
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetTrigger("Ataque");
+        }
+
+
         //salto
-        if(Input.GetKeyDown(KeyCode.UpArrow) && isOnGround && esGolpeado == false) 
+        if(Input.GetKeyDown(KeyCode.UpArrow) && isOnGround) 
         {
 
             animator.SetBool("enSuelo", false);
@@ -60,17 +67,18 @@ public class PlayerController : MonoBehaviour
 
         }
         //si no esta en tierra que coja la animacion de salto
-        if (isOnGround == false && esGolpeado == false)
+        if (isOnGround == false )
         {
             animator.SetBool("enSuelo", false);
         }
-        if(isOnGround == true && esGolpeado == false)
+        if(isOnGround == true )
         {
             animator.SetBool("enSuelo", true);
         }
-            
         
-  
+
+
+
 
         //movimiento
         moveHorizontal = Input.GetAxis("Horizontal");
@@ -96,6 +104,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Suelo")
         {
+            animator.SetBool("enSuelo", true);
             isOnGround = true;
             esGolpeado = false;
         }
@@ -106,6 +115,10 @@ public class PlayerController : MonoBehaviour
             cameraPlayer.transform.parent = null;
             Instantiate(explosionPrefab, transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
             Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "PlataformaMovil")
+        {
+            animator.SetBool("enSuelo", true);      
         }
 
 
