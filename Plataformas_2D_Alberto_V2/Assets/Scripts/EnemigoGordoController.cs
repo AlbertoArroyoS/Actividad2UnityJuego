@@ -9,11 +9,12 @@ public class NewBehaviourScript : MonoBehaviour
 
 
     //saber la position del player
-    Transform player;
+    public Transform player;
     //velocidad del enemigo
     float speed = 2f;
     //para voltear al enemigo
     SpriteRenderer spriteRenderer;
+    bool endGame = false;
 
     // Start is called before the first frame update
     void Start()
@@ -46,4 +47,5 @@ public class NewBehaviourScript : MonoBehaviour
         }
         
     }
+  
 }

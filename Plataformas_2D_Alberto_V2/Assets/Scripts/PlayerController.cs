@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     public Camera cameraPlayer;
     public GameObject explosionPrefab;
 
+    private LlamadasEnemigos enemigosLlamada;
+
     [Header("Animacion")]
     private Animator animator;
 
@@ -53,7 +55,9 @@ public class PlayerController : MonoBehaviour
         //patada
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            audioSourcePlayer.PlayOneShot(atacaClip);
             animator.SetTrigger("Ataque");
+            
         }
 
 
@@ -114,6 +118,8 @@ public class PlayerController : MonoBehaviour
             esGolpeado = true;
             cameraPlayer.transform.parent = null;
             Instantiate(explosionPrefab, transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
+            //****
+            //enemigosLlamada.pararEnemigos();
             Destroy(gameObject);
         }
         if (collision.gameObject.tag == "PlataformaMovil")
