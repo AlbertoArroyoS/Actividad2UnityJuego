@@ -8,5 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 89fb3212227feb749b74ffeb22235bd7
+  - enabled: 1
+    path: Assets/Scenes/Dificultad.unity
+    guid: 385f22c7720446b4c92256af062d73fb
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
