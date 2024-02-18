@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.EditorTools;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerController : MonoBehaviour
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
     public GameObject explosionPrefab;
 
     private LlamadasEnemigos enemigosLlamada;
+    public GameObject panelPerder;
 
     [Header("Animacion")]
     private Animator animator;
@@ -80,9 +82,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("enSuelo", true);
         }
-        
-
-
 
 
         //movimiento
@@ -100,7 +99,7 @@ public class PlayerController : MonoBehaviour
         }
         //la posicion mas actual + lo que sea la tecla que se pulse y velocidad a la que se esta moviendo con la variable speed
         transform.position += new Vector3(moveHorizontal,0,0) * Time.deltaTime*speed;
-        
+
 
 
     }
@@ -121,7 +120,10 @@ public class PlayerController : MonoBehaviour
             Instantiate(explosionPrefab, transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
             //****
             //enemigosLlamada.pararEnemigos();
+            Debug.Log("Activando panelPerder");
+            panelPerder.SetActive(true);
             Destroy(gameObject);
+
         }
         if (collision.gameObject.tag == "PlataformaMovil")
         {
@@ -181,4 +183,5 @@ public class PlayerController : MonoBehaviour
 
         
     }
+
 }
