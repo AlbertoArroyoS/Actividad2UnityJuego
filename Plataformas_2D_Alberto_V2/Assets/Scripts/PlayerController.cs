@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
             Instantiate(explosionPrefab, transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
             //****
             //enemigosLlamada.pararEnemigos();
-            Debug.Log("Activando panelPerder");
+            //Debug.Log("Activando panelPerder");
             panelPerder.SetActive(true);
             Destroy(gameObject);
 
