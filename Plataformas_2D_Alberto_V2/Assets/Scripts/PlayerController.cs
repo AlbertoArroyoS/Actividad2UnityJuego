@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI PuntosTexto;
 
     private AudioSource audioSourcePlayer;
-    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip;
+    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip, anilloConseguido;
     public Camera cameraPlayer;
     public GameObject explosionPrefab;
 
@@ -126,6 +126,11 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("enSuelo", true);      
         }
+        if (collision.gameObject.tag == "Cofre")
+        {
+            isOnGround = true;
+        }
+
 
 
 
@@ -134,6 +139,11 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         isOnGround = false;
+
+        if (collision.gameObject.tag == "Cofre")
+        {
+            isOnGround = true;
+        }
     }
 
     //Para sumar puntos con los objetos
@@ -159,6 +169,15 @@ public class PlayerController : MonoBehaviour
             puntosTotales += puntosGema;
             Destroy(collision.gameObject);
         }
+        if (collision.tag == "Anillo")
+        {
+            audioSourcePlayer.PlayOneShot(anilloConseguido);
+            //puntosTotales += puntosGema;
+            //Destroy(collision.gameObject);
+        }
+
         PuntosTexto.text = ("PUNTOS: " + puntosTotales.ToString());
+
+        
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - Suelo
   - PlataformaMovil
   - Cofre
+  - Anillo
   layers:
   - Default
   - TransparentFX
