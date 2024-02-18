@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class AnilloController : MonoBehaviour
 {
-    private AudioSource audioSourcePlayer;
-    public AudioClip anilloConseguido;
+
     // Start is called before the first frame update
     void Start()
     {
-        audioSourcePlayer = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -26,7 +25,7 @@ public class AnilloController : MonoBehaviour
     {
         if(collision.tag== "Player")
         {
-            audioSourcePlayer.PlayOneShot(anilloConseguido);
+            //audioSourcePlayer.PlayOneShot(anilloConseguido);
             //encontrar un objeto en la gerarquia que tenga este controlador
             FindAnyObjectByType<CofreController>().tieneAnillo = true;
             Destroy(gameObject);

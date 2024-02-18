@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CofreController : MonoBehaviour
 {
     private AudioSource audioSourcePlayer;
     public AudioClip exito;
     public bool tieneAnillo = false;
+    public GameObject panelWin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +26,21 @@ public class CofreController : MonoBehaviour
     {
         if (collision.gameObject.tag== "Player" && tieneAnillo==true)
         {
-             GetComponent<Animator>().SetTrigger("open");
-             audioSourcePlayer.PlayOneShot(exito);
+            GetComponent<Animator>().SetTrigger("open");
+            audioSourcePlayer.PlayOneShot(exito);
             //activar fin del juego
+            StartCoroutine("finalJuego");
         }
     }
+    //corrutina para que cambie la escena 4 segundos despues de abrir el cofre
+    IEnumerator finalJuego()
+    {
+
+        //segundos a esperar
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("FinalGanar");
+
+    }
+
+
 }

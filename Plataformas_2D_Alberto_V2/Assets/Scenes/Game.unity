@@ -31806,7 +31806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86692943be1c2cb4c899271269289929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anilloConseguido: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
 --- !u!1001 &995477384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32866,6 +32865,10 @@ PrefabInstance:
     - target: {fileID: 805992907965284438, guid: 6feaf29b68c4de040861aefa927d9d17, type: 3}
       propertyPath: m_Name
       value: CastilloRosa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235372143686807528, guid: 6feaf29b68c4de040861aefa927d9d17, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6747225995281662298, guid: 6feaf29b68c4de040861aefa927d9d17, type: 3}
       propertyPath: m_LocalScale.x
