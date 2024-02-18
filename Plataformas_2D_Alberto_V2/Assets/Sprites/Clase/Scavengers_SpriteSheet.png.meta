@@ -335,7 +335,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scavengers_SpriteSheet_0: 2756579043321359935
+      Scavengers_SpriteSheet_1: -5744340447670342355
+      Scavengers_SpriteSheet_2: 778407276202536082
+      Scavengers_SpriteSheet_3: 6387871767224247156
+      Scavengers_SpriteSheet_4: -963794370624598714
+      Scavengers_SpriteSheet_5: -4101412294073354408
+      Scavengers_SpriteSheet_6: -4251768712096742070
+      Scavengers_SpriteSheet_7: 3040342873263178238
+      Scavengers_SpriteSheet_8: -3976522780401288759
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -191,7 +191,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Environmental_SpritesV2_0: 2002220196351487691
+      Environmental_SpritesV2_1: -6026221456422054230
+      Environmental_SpritesV2_2: -7689552054965831229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

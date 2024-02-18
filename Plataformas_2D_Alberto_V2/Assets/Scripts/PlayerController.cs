@@ -129,7 +129,6 @@ public class PlayerController : MonoBehaviour
 
 
 
-
     }
     //cuando no se esta tocando el player con el suelo
     private void OnCollisionExit2D(Collision2D collision)

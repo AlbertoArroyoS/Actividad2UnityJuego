@@ -551,7 +551,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PinochoBaila_0: 6638154100183882590
+      PinochoBaila_1: -6882383509886834918
+      PinochoBaila_10: 8503750265318977717
+      PinochoBaila_11: -7920391340543146099
+      PinochoBaila_12: 3292749852093696724
+      PinochoBaila_13: 7297319790316764976
+      PinochoBaila_14: -7496506874718587535
+      PinochoBaila_15: 1521730505142344489
+      PinochoBaila_16: 1806707308463597559
+      PinochoBaila_17: 7195401185616949620
+      PinochoBaila_2: 4523269906091748402
+      PinochoBaila_3: 805591172505667522
+      PinochoBaila_4: 2331307431213819099
+      PinochoBaila_5: -6934018416427402193
+      PinochoBaila_6: 1413237331830353140
+      PinochoBaila_7: 7407465342241806364
+      PinochoBaila_8: 3036271750528907247
+      PinochoBaila_9: 4452588102543671000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GreyCavern2_0: 6096461304599325525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -239,7 +239,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vegetation1_0: -8802464969140977237
+      Vegetation1_1: 574124926553387297
+      Vegetation1_2: 4698273519754705384
+      Vegetation1_3: -702003884340581185
+      Vegetation1_4: 2702371065739281616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
