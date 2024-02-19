@@ -45,8 +45,9 @@ public class PlayerController : MonoBehaviour
     private int damageGedeon = 2;
 
     private CofreController cofreController;
-    bool tieneLlave;
-    
+
+    public bool tieneAnillo = false;
+
 
 
 
@@ -62,10 +63,6 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("enSuelo", true);
 
         cofreController = GetComponent<CofreController>();
-        if (cofreController != null)
-        {
-            tieneLlave = cofreController.tieneAnillo;
-        }
 
     }
 
@@ -167,11 +164,13 @@ public class PlayerController : MonoBehaviour
             isOnGround = true;
         }
 
-        if (collision.gameObject.tag == "Cofre" && tieneLlave == false)
+        if (collision.gameObject.tag == "Cofre" && tieneAnillo==false)
         {
-            // audioSourcePlayer.PlayOneShot(atacaClip);
-            animator.SetTrigger("SinLlave");
 
+              
+             animator.SetTrigger("TieneAnillo");
+            // audioSourcePlayer.PlayOneShot(atacaClip);
+           
         }
 
 
@@ -185,7 +184,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Cofre")
         {
             isOnGround = true;
-            animator.ResetTrigger("SinLlave");
+            //animator.ResetTrigger("SinLlave");
 
         }
         if (collision.gameObject.tag == "Gordo" || collision.gameObject.tag == "Gedeon")
@@ -220,6 +219,7 @@ public class PlayerController : MonoBehaviour
         if (collision.tag == "Anillo")
         {
             audioSourcePlayer.PlayOneShot(anilloConseguido);
+            tieneAnillo = true;
             //puntosTotales += puntosGema;
             //Destroy(collision.gameObject);
         }

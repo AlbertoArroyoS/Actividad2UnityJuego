@@ -34,13 +34,7 @@ public class CofreController : MonoBehaviour
             StartCoroutine("finalJuego");
         }
 
-        //patada
-        if (collision.gameObject.tag == "Player" && tieneAnillo == false)
-        {
-           // audioSourcePlayer.PlayOneShot(atacaClip);
-            animator.SetTrigger("SinLlave");
-
-        }
+        
     }
     //corrutina para que cambie la escena 4 segundos despues de abrir el cofre
     IEnumerator finalJuego()

@@ -143,12 +143,12 @@ TextureImporter:
       name: PinocchioQuieto2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 49
-        height: 48
+        x: 1
+        y: 1
+        width: 47
+        height: 46
       alignment: 9
-      pivot: {x: 0.5, y: 0.52}
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -164,12 +164,12 @@ TextureImporter:
       name: PinocchioQuieto2_1
       rect:
         serializedVersion: 2
-        x: 52
+        x: 53
         y: 0
-        width: 46
-        height: 48
+        width: 44
+        height: 47
       alignment: 9
-      pivot: {x: 0.5, y: 0.52}
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,12 +185,12 @@ TextureImporter:
       name: PinocchioQuieto2_2
       rect:
         serializedVersion: 2
-        x: 101
+        x: 102
         y: 0
-        width: 42
-        height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 40
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: PinocchioQuieto2_3
       rect:
         serializedVersion: 2
-        x: 145
+        x: 146
         y: 0
-        width: 36
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 34
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: PinocchioQuieto2_4
       rect:
         serializedVersion: 2
-        x: 184
+        x: 185
         y: 0
-        width: 38
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 36
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -248,12 +248,12 @@ TextureImporter:
       name: PinocchioQuieto2_5
       rect:
         serializedVersion: 2
-        x: 224
+        x: 225
         y: 0
-        width: 40
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: PinocchioQuieto2_6
       rect:
         serializedVersion: 2
-        x: 268
+        x: 269
         y: 0
-        width: 38
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 36
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: PinocchioQuieto2_7
       rect:
         serializedVersion: 2
-        x: 310
-        y: 0
-        width: 39
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 311
+        y: 1
+        width: 37
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -311,12 +311,12 @@ TextureImporter:
       name: PinocchioQuieto2_8
       rect:
         serializedVersion: 2
-        x: 354
+        x: 355
         y: 0
-        width: 43
-        height: 49
+        width: 41
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.52}
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -332,10 +332,10 @@ TextureImporter:
       name: PinocchioQuieto2_9
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 48
-        height: 47
+        x: 401
+        y: 1
+        width: 46
+        height: 45
       alignment: 9
       pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
