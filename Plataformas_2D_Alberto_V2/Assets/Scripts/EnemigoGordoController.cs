@@ -15,6 +15,8 @@ public class NewBehaviourScript : MonoBehaviour
     //para voltear al enemigo
     SpriteRenderer spriteRenderer;
     bool endGame = false;
+   // public PlayerController playerController;
+   // private int damage = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (playerObject != null)
         {
             player = playerObject.transform;
+            //playerController = playerObject.GetComponent<PlayerController>();
         }
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -45,7 +48,19 @@ public class NewBehaviourScript : MonoBehaviour
                 spriteRenderer.flipX = false;
             }
         }
-        
+
     }
-  
+    /*
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            // Verificar si la referencia a PlayerController no es nula
+            if (playerController != null)
+            {
+                playerController.perderVida(damage);
+            }
+        }
+
+    }*/
 }

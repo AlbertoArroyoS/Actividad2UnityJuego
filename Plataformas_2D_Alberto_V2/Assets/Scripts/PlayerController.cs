@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI PuntosTexto;
 
     private AudioSource audioSourcePlayer;
-    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip, anilloConseguido;
+    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip, anilloConseguido, vidaConseguida;
     public Camera cameraPlayer;
     public GameObject explosionPrefab;
 
@@ -76,10 +76,12 @@ public class PlayerController : MonoBehaviour
 
             animator.SetBool("enSuelo", false);
             audioSourcePlayer.PlayOneShot(saltoClip);
-            rigidPlayer.AddForce(Vector2.up* jumpForce, ForceMode2D.Impulse);
+            rigidPlayer.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
         }
+
         //si no esta en tierra que coja la animacion de salto
+        
         if (isOnGround == false )
         {
             animator.SetBool("enSuelo", false);
@@ -88,6 +90,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("enSuelo", true);
         }
+        
 
 
         //movimiento
@@ -121,15 +124,9 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.tag == "Gordo")
         {
+
             isOnGround = true;
             esGolpeado = true;
-            
-           
-            //Instantiate(explosionPrefab, transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
-            //****
-            //enemigosLlamada.pararEnemigos();
-            //Debug.Log("Activando panelPerder");
-
             perderVida(damageGordo);
 
 
@@ -145,7 +142,6 @@ public class PlayerController : MonoBehaviour
 
 
 
-
     }
     //cuando no se esta tocando el player con el suelo
     private void OnCollisionExit2D(Collision2D collision)
@@ -153,6 +149,10 @@ public class PlayerController : MonoBehaviour
         isOnGround = false;
 
         if (collision.gameObject.tag == "Cofre")
+        {
+            isOnGround = true;
+        }
+        if (collision.gameObject.tag == "Gordo")
         {
             isOnGround = true;
         }
@@ -187,19 +187,20 @@ public class PlayerController : MonoBehaviour
             //puntosTotales += puntosGema;
             //Destroy(collision.gameObject);
         }
+        if (collision.tag == "Corazon")
+        {
+            bool vidaRecuperada = recuperarVida();
+            if (vidaRecuperada)
+            {
+                audioSourcePlayer.PlayOneShot(vidaConseguida);
+                Destroy(collision.gameObject);
+            }
+
+        }
 
         PuntosTexto.text = ("PUNTOS: " + puntosTotales.ToString());
 
-        if (collision.tag == "Corazon")
-        {
-            Destroy(collision.gameObject);
-            bool vidaCoger = recuperarVida();
-            if (vidaCoger)
-            {
-                Destroy(collision.gameObject);
-            }
-            
-        }
+        
     }
     public void desactivarVida(int indice)
     {
@@ -229,7 +230,7 @@ public class PlayerController : MonoBehaviour
 
     public bool recuperarVida()
     {
-        if (vidaCorazon >= 0)
+        if (vidaCorazon == 3 )
         {
             return false;
         }
