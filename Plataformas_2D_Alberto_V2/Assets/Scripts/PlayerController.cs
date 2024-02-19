@@ -37,6 +37,13 @@ public class PlayerController : MonoBehaviour
     [Header("Animacion")]
     private Animator animator;
 
+    //vidas
+    public GameObject[] vidas;
+    private int vidaCorazon = 3;
+    //daño
+    private int damageGordo=1;
+    private int damegeGedeon=2;
+
 
 
     // Start is called before the first frame update
@@ -62,7 +69,6 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Ataque");
             
         }
-
 
         //salto
         if(Input.GetKeyDown(KeyCode.UpArrow) && isOnGround) 
@@ -115,14 +121,17 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.tag == "Gordo")
         {
+            isOnGround = true;
             esGolpeado = true;
-            cameraPlayer.transform.parent = null;
-            Instantiate(explosionPrefab, transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
+            
+           
+            //Instantiate(explosionPrefab, transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
             //****
             //enemigosLlamada.pararEnemigos();
             //Debug.Log("Activando panelPerder");
-            panelPerder.SetActive(true);
-            Destroy(gameObject);
+
+            perderVida(damageGordo);
+
 
         }
         if (collision.gameObject.tag == "PlataformaMovil")
@@ -181,7 +190,52 @@ public class PlayerController : MonoBehaviour
 
         PuntosTexto.text = ("PUNTOS: " + puntosTotales.ToString());
 
-        
+        if (collision.tag == "Corazon")
+        {
+            Destroy(collision.gameObject);
+            bool vidaCoger = recuperarVida();
+            if (vidaCoger)
+            {
+                Destroy(collision.gameObject);
+            }
+            
+        }
+    }
+    public void desactivarVida(int indice)
+    {
+        vidas[indice].SetActive(false);
+    }
+
+    public void activarVida(int indice)
+    {
+        vidas[indice].SetActive(true);
+    }
+
+    //restara las vidas por daño y devuelve cuantas le quedan al personaje
+    //como tendremos varios personajes con distinto daño, se le pasa por parametro
+    public void perderVida(int damage)
+    {
+        vidaCorazon -= damage;
+        desactivarVida(vidaCorazon);
+
+        if (vidaCorazon <= 0)
+        {
+            panelPerder.SetActive(true);
+            Instantiate(explosionPrefab, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+            cameraPlayer.transform.parent = null;
+            Destroy(gameObject);
+        }
+    }
+
+    public bool recuperarVida()
+    {
+        if (vidaCorazon >= 0)
+        {
+            return false;
+        }
+        activarVida(vidaCorazon);
+        vidaCorazon += 1;
+        return true;
     }
 
 }
