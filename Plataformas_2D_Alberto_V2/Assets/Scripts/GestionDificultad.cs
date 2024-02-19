@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class GestionDificultad : MonoBehaviour
 {
+
+    GameObject panelFacil;
+    GameObject panelDificil;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        panelFacil = GameObject.Find("PanelFacil");
+        panelDificil = GameObject.Find("PanelDificil");
+        panelDificil.SetActive(false);
+        panelFacil.SetActive(false);
     }
 
     // Update is called once per frame
@@ -17,17 +24,41 @@ public class GestionDificultad : MonoBehaviour
         
     }
 
+    public void botonAventura()
+    {
+        panelFacil.SetActive(true);
+
+
+
+    }
+
     public void botonNormal()
+    {
+        panelDificil.SetActive(true);
+
+    }
+
+    public void botonComenzarFacil()
+    {
+        //cargar la escena de game llamando al gestor
+        SceneManager.LoadScene("GameFacil");
+
+
+    }
+    public void botonComenzarDificil()
     {
         //cargar la escena de game llamando al gestor
         SceneManager.LoadScene("Game");
 
-
     }
 
-    public void botonFacil()
+    public void botonVolver()
     {
-        //cargar la escena de game llamando al gestor
-        SceneManager.LoadScene("GameFacil");
+        panelFacil.SetActive(false);
+        panelDificil.SetActive(false);
     }
+
+    
+
+    
 }
