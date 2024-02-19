@@ -10,12 +10,15 @@ public class CofreController : MonoBehaviour
     public bool tieneAnillo = false;
     public GameObject panelWin;
     private Animator animator;
+    private GameObject globos;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSourcePlayer = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+        globos = GameObject.FindGameObjectWithTag("Globos");
+        globos.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class CofreController : MonoBehaviour
         {
             GetComponent<Animator>().SetTrigger("open");
             audioSourcePlayer.PlayOneShot(exito);
+            globos.SetActive(true);
             //activar fin del juego
             StartCoroutine("finalJuego");
         }

@@ -3774,7 +3774,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3d80196a128f1a944a41e6c199304e5c, type: 2}
+  - {fileID: 2100000, guid: c6c0e8084a0a9564183dc938d530338e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33391,6 +33391,7 @@ MonoBehaviour:
   anilloConseguido: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
   vidaConseguida: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
   damage: {fileID: 8300000, guid: 4b4dd7245f6104c8c8eb07ccf6b386ed, type: 3}
+  failCrofre: {fileID: 8300000, guid: 2b3f97f705f6aac419179c86d270d864, type: 3}
   cameraPlayer: {fileID: 519420031}
   explosionPrefab: {fileID: 329567666899258255, guid: 9e5ab1b46222b034486721de333f2ee7, type: 3}
   panelPerder: {fileID: 708569741}
@@ -34583,6 +34584,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8481a2acb9e621a4598bd67c7d2993be, type: 3}
+--- !u!1001 &7512048469693874184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 121.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765569704831415730, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821107028441336887, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_Name
+      value: Globos
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821107028441336887, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0da7714590e8a2e4d9ec423d6ce0d13d, type: 3}
 --- !u!1001 &8858992771216489465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34660,3 +34722,4 @@ SceneRoots:
   - {fileID: 1794752422833459015}
   - {fileID: 924915182}
   - {fileID: 790782967}
+  - {fileID: 7512048469693874184}

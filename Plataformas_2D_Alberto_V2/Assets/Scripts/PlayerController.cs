@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI PuntosTexto;
 
     private AudioSource audioSourcePlayer;
-    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip, anilloConseguido, vidaConseguida, damage;
+    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip, anilloConseguido, vidaConseguida, damage, failCrofre;
     public Camera cameraPlayer;
     public GameObject explosionPrefab;
 
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
     private CofreController cofreController;
 
-    public bool tieneAnillo = false;
+   // public bool tieneAnillo = false;
 
 
 
@@ -164,11 +164,11 @@ public class PlayerController : MonoBehaviour
             isOnGround = true;
         }
 
-        if (collision.gameObject.tag == "Cofre" && tieneAnillo==false)
+        if (collision.gameObject.tag == "Cofre" && FindAnyObjectByType<CofreController>().tieneAnillo == false)
         {
-
-              
-             animator.SetTrigger("TieneAnillo");
+            // ******* SONIDO  failCrofre
+            audioSourcePlayer.PlayOneShot(failCrofre);
+            animator.SetTrigger("TieneAnillo");
             // audioSourcePlayer.PlayOneShot(atacaClip);
            
         }
@@ -219,7 +219,6 @@ public class PlayerController : MonoBehaviour
         if (collision.tag == "Anillo")
         {
             audioSourcePlayer.PlayOneShot(anilloConseguido);
-            tieneAnillo = true;
             //puntosTotales += puntosGema;
             //Destroy(collision.gameObject);
         }
