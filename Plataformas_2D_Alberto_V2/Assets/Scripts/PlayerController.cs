@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI PuntosTexto;
 
     private AudioSource audioSourcePlayer;
-    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip, anilloConseguido, vidaConseguida;
+    public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip, anilloConseguido, vidaConseguida, damage;
     public Camera cameraPlayer;
     public GameObject explosionPrefab;
 
@@ -41,8 +41,8 @@ public class PlayerController : MonoBehaviour
     public GameObject[] vidas;
     private int vidaCorazon = 3;
     //daño
-    private int damageGordo=1;
-    private int damegeGedeon=2;
+    private int damageGordo = 1;
+    private int damageGedeon = 2;
 
 
 
@@ -124,13 +124,30 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.tag == "Gordo")
         {
-
+            audioSourcePlayer.PlayOneShot(damage);
             isOnGround = true;
             esGolpeado = true;
-            perderVida(damageGordo);
-
+            //quitar la vida dependiendo del daño y que se descuenten los corazones de 1 en 1
+            for (int i = 0; i < damageGordo; i++)
+            {
+                perderVida(1);
+            }
 
         }
+
+        if (collision.gameObject.tag == "Gedeon")
+        {
+            audioSourcePlayer.PlayOneShot(damage);
+            isOnGround = true;
+            esGolpeado = true;
+            //quitar la vida dependiendo del daño y que se descuenten los corazones de 1 en 1
+            for (int i = 0; i < damageGedeon; i++)
+            {
+                perderVida(1);
+            }
+
+        }
+
         if (collision.gameObject.tag == "PlataformaMovil")
         {
             animator.SetBool("enSuelo", true);      
@@ -217,7 +234,12 @@ public class PlayerController : MonoBehaviour
     public void perderVida(int damage)
     {
         vidaCorazon -= damage;
-        desactivarVida(vidaCorazon);
+
+        // Verificar si el índice está dentro del rango del array vidas
+        if (vidaCorazon >= 0 && vidaCorazon < vidas.Length)
+        {
+            desactivarVida(vidaCorazon);
+        }
 
         if (vidaCorazon <= 0)
         {
