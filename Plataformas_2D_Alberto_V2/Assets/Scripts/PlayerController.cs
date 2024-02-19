@@ -44,6 +44,10 @@ public class PlayerController : MonoBehaviour
     private int damageGordo = 1;
     private int damageGedeon = 2;
 
+    private CofreController cofreController;
+    bool tieneLlave;
+    
+
 
 
     // Start is called before the first frame update
@@ -56,6 +60,12 @@ public class PlayerController : MonoBehaviour
         audioSourcePlayer = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         animator.SetBool("enSuelo", true);
+
+        cofreController = GetComponent<CofreController>();
+        if (cofreController != null)
+        {
+            tieneLlave = cofreController.tieneAnillo;
+        }
 
     }
 
@@ -157,6 +167,13 @@ public class PlayerController : MonoBehaviour
             isOnGround = true;
         }
 
+        if (collision.gameObject.tag == "Cofre" && tieneLlave == false)
+        {
+            // audioSourcePlayer.PlayOneShot(atacaClip);
+            animator.SetTrigger("SinLlave");
+
+        }
+
 
 
     }
@@ -168,6 +185,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Cofre")
         {
             isOnGround = true;
+            animator.ResetTrigger("SinLlave");
+
         }
         if (collision.gameObject.tag == "Gordo" || collision.gameObject.tag == "Gedeon")
         {

@@ -9,11 +9,13 @@ public class CofreController : MonoBehaviour
     public AudioClip exito;
     public bool tieneAnillo = false;
     public GameObject panelWin;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSourcePlayer = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,12 +26,20 @@ public class CofreController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag== "Player" && tieneAnillo==true)
+        if (collision.gameObject.tag== "Player" && tieneAnillo)
         {
             GetComponent<Animator>().SetTrigger("open");
             audioSourcePlayer.PlayOneShot(exito);
             //activar fin del juego
             StartCoroutine("finalJuego");
+        }
+
+        //patada
+        if (collision.gameObject.tag == "Player" && tieneAnillo == false)
+        {
+           // audioSourcePlayer.PlayOneShot(atacaClip);
+            animator.SetTrigger("SinLlave");
+
         }
     }
     //corrutina para que cambie la escena 4 segundos despues de abrir el cofre
