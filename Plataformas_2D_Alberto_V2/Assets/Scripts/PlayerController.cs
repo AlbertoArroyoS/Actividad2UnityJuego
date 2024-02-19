@@ -169,7 +169,7 @@ public class PlayerController : MonoBehaviour
         {
             isOnGround = true;
         }
-        if (collision.gameObject.tag == "Gordo")
+        if (collision.gameObject.tag == "Gordo" || collision.gameObject.tag == "Gedeon")
         {
             isOnGround = true;
         }
