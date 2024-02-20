@@ -9,6 +9,9 @@ public class GestionDificultad : MonoBehaviour
     GameObject panelFacil;
     GameObject panelDificil;
 
+    private AudioSource audioSourcePlayer;
+    public AudioClip empezarCancion;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +19,9 @@ public class GestionDificultad : MonoBehaviour
         panelDificil = GameObject.Find("PanelDificil");
         panelDificil.SetActive(false);
         panelFacil.SetActive(false);
+        audioSourcePlayer = GetComponent<AudioSource>();
+        audioSourcePlayer.PlayOneShot(empezarCancion);
+
     }
 
     // Update is called once per frame
@@ -40,13 +46,15 @@ public class GestionDificultad : MonoBehaviour
 
     public void botonComenzarFacil()
     {
+
         //cargar la escena de game llamando al gestor
         SceneManager.LoadScene("GameFacil");
-
+        
 
     }
     public void botonComenzarDificil()
     {
+        
         //cargar la escena de game llamando al gestor
         SceneManager.LoadScene("Game");
 

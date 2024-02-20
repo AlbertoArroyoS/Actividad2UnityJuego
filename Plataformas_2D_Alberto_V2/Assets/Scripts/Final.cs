@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Final : MonoBehaviour
 {
+    public AudioClip cancionFinal;
+    private AudioSource audioSourcePlayer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSourcePlayer = GetComponent<AudioSource>();
+        audioSourcePlayer.PlayOneShot(cancionFinal);
     }
 
     // Update is called once per frame
