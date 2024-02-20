@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private int puntosManzana = 1;
     private int puntosMoneda = 2;
     private int puntosGema = 3;
-    public TextMeshProUGUI PuntosTexto;
+    public TextMeshProUGUI puntosTexto, maxPuntosTexto;
 
     private AudioSource audioSourcePlayer;
     public AudioClip saltoClip, manzanaClip, gemaClip, monedaClip,atacaClip, muerteExplosionClip, anilloConseguido, vidaConseguida, damage, failCrofre;
@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
     private int damageGedeon = 2;
 
     private CofreController cofreController;
+    private int puntosMax;
 
    // public bool tieneAnillo = false;
 
@@ -63,6 +64,11 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("enSuelo", true);
 
         cofreController = GetComponent<CofreController>();
+
+        //leer del registro de windows con PlayerPrefs la puntuacion maxima, entre sesiones de juego , puedes guardar datos y nombres
+        puntosMax = PlayerPrefs.GetInt("PuncuacionMaxima",0);
+        maxPuntosTexto.text = ("MAX: " + puntosMax.ToString());
+
 
     }
 
@@ -233,7 +239,16 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        PuntosTexto.text = ("PUNTOS: " + puntosTotales.ToString());
+        puntosTexto.text = ("PUNTOS: " + puntosTotales.ToString());
+
+        //Cuando se supere la puntuacion maxima que se ponga la maxima
+
+        if (puntosTotales> puntosMax)
+        {
+            puntosMax=puntosTotales;
+            maxPuntosTexto.text = ("MAX: " + puntosMax.ToString());
+            PlayerPrefs.SetInt("PuncuacionMaxima", puntosMax);
+        }
 
         
     }
