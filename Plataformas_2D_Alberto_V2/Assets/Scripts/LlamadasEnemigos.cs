@@ -41,7 +41,7 @@ public class LlamadasEnemigos : MonoBehaviour
     {
 
         //segundos a esperar
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         while (true)
             {
             //instanciar enemigos, que enemigo , posicion del objeto que tiene el script, quaternion que no se rote

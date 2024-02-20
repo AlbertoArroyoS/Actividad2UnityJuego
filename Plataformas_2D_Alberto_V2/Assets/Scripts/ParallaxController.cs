@@ -54,6 +54,10 @@ public class ParallaxController : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (cam == null) // Comprueba si la cámara se ha destruido
+        {
+            return;
+        }
         distance = cam.position.x -camStartPos.x;
         transform.position = new Vector3(cam.position.x, transform.position.y, 0);
 
