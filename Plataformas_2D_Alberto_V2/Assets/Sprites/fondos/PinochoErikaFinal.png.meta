@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PinochoErikaFinal_0: 6886269005716743515
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
