@@ -14,7 +14,7 @@ public class ParallaxController : MonoBehaviour
     float[] backSpeed;
 
     float farthestBack;
-    [Range(0.001f, 0.02f)]
+    [Range(0.0001f, 0.02f)]
     public float parallaxSpeed;
 
     // Start is called before the first frame update
