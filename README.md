@@ -92,6 +92,8 @@ El cochero quitará 1 punto y Gedeón 2
 
 ![Imagen](imgReadme/parallax/parallax.gif)
 
+![Imagen](imgReadme/parallax.png)
+
 # Animación si pinocho intenta abrir el cofre y no tiene el anillo
 
 ![Imagen](imgReadme/pinochoNariz/nariz.gif)
