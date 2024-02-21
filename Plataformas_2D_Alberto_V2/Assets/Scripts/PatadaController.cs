@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PatadaController : MonoBehaviour
 {
+    private AudioSource audioSourcePlayer;
+    public AudioClip damage;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSourcePlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,11 +22,13 @@ public class PatadaController : MonoBehaviour
     {
         if (collision.tag == "Gordo")
         {
+            audioSourcePlayer.PlayOneShot(damage);
             Destroy(collision.gameObject);
         }
 
         if (collision.tag == "Gedeon")
         {
+            audioSourcePlayer.PlayOneShot(damage);
             Destroy(collision.gameObject);
         }
 
