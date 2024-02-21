@@ -148,7 +148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43781290}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e0934ff63d379242a96aa5b1a5ccf9b, type: 3}
   m_Name: 
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43781290}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f646834b786ebc34b9e7d1dc172bc7d5, type: 3}
   m_Name: 
@@ -808,9 +808,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 43781291}
-        m_TargetAssemblyTypeName: Final, Assembly-CSharp
-        m_MethodName: botonJugar
+      - m_Target: {fileID: 43781297}
+        m_TargetAssemblyTypeName: FinalFacil, Assembly-CSharp
+        m_MethodName: botonJugarFacil
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

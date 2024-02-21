@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerFacil : MonoBehaviour
 {
 
     //Atributos
@@ -69,8 +69,8 @@ public class PlayerController : MonoBehaviour
         //leer del registro de windows con PlayerPrefs la puntuacion maxima, entre sesiones de juego , puedes guardar datos y nombres
         puntosMax = PlayerPrefs.GetInt("PuntuacionMaxima",0);
         maxPuntosTexto.text = ("MAX: " + puntosMax.ToString());
-        //reiniciar la puntuacion de la partida
-        PlayerPrefs.SetInt("PuntuacionPartida", 0);
+        //guardar los puntos de cada partida individual
+        puntosPartida = PlayerPrefs.GetInt("PuntuacionPartida", 0);
 
 
     }
@@ -243,7 +243,7 @@ public class PlayerController : MonoBehaviour
         }
 
         puntosTexto.text = ("PUNTOS: " + puntosTotales.ToString());
-        PlayerPrefs.SetInt("PuntuacionPartida", puntosTotales);
+
         //Cuando se supere la puntuacion maxima que se ponga la maxima
 
         if (puntosTotales> puntosMax)
@@ -282,6 +282,7 @@ public class PlayerController : MonoBehaviour
             panelPerder.SetActive(true);
             Instantiate(explosionPrefab, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
             cameraPlayer.transform.parent = null;
+            PlayerPrefs.SetInt("PuntuacionPartida", puntosTotales);
             Destroy(gameObject);
         }
     }

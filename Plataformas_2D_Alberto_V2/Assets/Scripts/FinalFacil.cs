@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Final : MonoBehaviour
+public class FinalFacil : MonoBehaviour
 {
     public AudioClip cancionFinal;
     private AudioSource audioSourcePlayer;
@@ -17,7 +17,6 @@ public class Final : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
          audioSourcePlayer = GetComponent<AudioSource>();
          audioSourcePlayer.PlayOneShot(cancionFinal);
          puntosPartidaFinal = PlayerPrefs.GetInt("PuntuacionPartida", 0);
@@ -33,11 +32,11 @@ public class Final : MonoBehaviour
         
     }
 
-    public void botonJugar()
+    public void botonJugarFacil()
     {
         //cargar la escena de game llamando al gestor
         PlayerPrefs.SetInt("PuntuacionPartida", 0);
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GameFacil");
 
 
     }

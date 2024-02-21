@@ -45411,6 +45411,8 @@ GameObject:
   - component: {fileID: 1285504821}
   - component: {fileID: 1285504820}
   - component: {fileID: 1285504824}
+  - component: {fileID: 1285504826}
+  - component: {fileID: 1285504825}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -45513,12 +45515,44 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285504819}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0934ff63d379242a96aa5b1a5ccf9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cancionFinal: {fileID: 0}
+  puntosTextoFinal: {fileID: 0}
+  maxPuntosTextoFinal: {fileID: 0}
+--- !u!114 &1285504825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285504819}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e0934ff63d379242a96aa5b1a5ccf9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cancionFinal: {fileID: 0}
+  puntosTextoFinal: {fileID: 461390893}
+  maxPuntosTextoFinal: {fileID: 1535458551}
+--- !u!114 &1285504826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285504819}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0934ff63d379242a96aa5b1a5ccf9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cancionFinal: {fileID: 0}
+  puntosTextoFinal: {fileID: 0}
+  maxPuntosTextoFinal: {fileID: 0}
 --- !u!4 &1338635270 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 858256012627178844, guid: d40d83a36354c0744b847059c03d7f8f, type: 3}

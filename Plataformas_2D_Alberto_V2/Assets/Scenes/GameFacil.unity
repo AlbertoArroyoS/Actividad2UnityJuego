@@ -1059,9 +1059,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1285504824}
-        m_TargetAssemblyTypeName: Final, Assembly-CSharp
-        m_MethodName: botonJugar
+      - m_Target: {fileID: 1285504826}
+        m_TargetAssemblyTypeName: FinalFacil, Assembly-CSharp
+        m_MethodName: botonJugarFacil
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45733,6 +45733,8 @@ GameObject:
   - component: {fileID: 1285504821}
   - component: {fileID: 1285504820}
   - component: {fileID: 1285504824}
+  - component: {fileID: 1285504825}
+  - component: {fileID: 1285504826}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -45835,12 +45837,44 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285504819}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e0934ff63d379242a96aa5b1a5ccf9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cancionFinal: {fileID: 0}
+  puntosTextoFinal: {fileID: 0}
+  maxPuntosTextoFinal: {fileID: 0}
+--- !u!114 &1285504825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285504819}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f646834b786ebc34b9e7d1dc172bc7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cancionFinal: {fileID: 0}
+  puntosTextoFinal: {fileID: 0}
+  maxPuntosTextoFinal: {fileID: 0}
+--- !u!114 &1285504826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285504819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f646834b786ebc34b9e7d1dc172bc7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cancionFinal: {fileID: 0}
+  puntosTextoFinal: {fileID: 461390893}
+  maxPuntosTextoFinal: {fileID: 1535458551}
 --- !u!1001 &1338615459
 PrefabInstance:
   m_ObjectHideFlags: 0
