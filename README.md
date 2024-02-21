@@ -74,7 +74,7 @@ El cochero quitará 1 punto y Gedeón 2
 
 # Escena final de juego para mostrar la puntuación total y la oportunidad de volver a jugar
 
-![Imagen](imgReadme/ganar.png)
+![Imagen](imgReadme/ganar.jpg)
 
 ![Imagen](imgReadme/panelPerder.png)
 
