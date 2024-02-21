@@ -6,7 +6,7 @@ Actividad Realizada por:
 
 ###  Alberto Arroyo Santofimia
 
-![Imagen](imgReadme/0diagrama.png)
+![Imagen](imgReadme/Splash/splash.gif)
 
 El juego consiste en conseguir el anillo de la Princesa Erika y llevarlo a su cofre
 para poder celebrar su cumpleaños.
