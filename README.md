@@ -16,7 +16,7 @@ Pinocho tiene animación al moverse, esperar, saltar.
 
 
 
-REQUISITO
+# REQUISITOS DE LA ACTIVIDAD
 
 # Escena inicial de introducción al juego
 
@@ -75,6 +75,8 @@ El cochero quitará 1 punto y Gedeón 2
 # Escena final de juego para mostrar la puntuación total y la oportunidad de volver a jugar
 
 ![Imagen](imgReadme/ganar.png)
+
+![Imagen](imgReadme/panelPerder.png)
 
 # Cambiar el icono del juego
 
