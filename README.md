@@ -16,7 +16,7 @@ REQUISITO
 
 # Escena inicial de introducción al juego
 
-![Imagen](imgReadme/)
+![Imagen](imgReadme/pantallaStart.png)
 
 # Cambiar todos los sprites y fondos del juego
 
