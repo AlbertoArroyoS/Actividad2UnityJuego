@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1285504825}
         m_TargetAssemblyTypeName: Final, Assembly-CSharp
         m_MethodName: botonJugar
         m_Mode: 1
@@ -47875,7 +47875,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1285504825}
         m_TargetAssemblyTypeName: Final, Assembly-CSharp
         m_MethodName: botonExit
         m_Mode: 1
