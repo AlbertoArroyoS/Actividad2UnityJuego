@@ -47,4 +47,19 @@ public class Final : MonoBehaviour
         //cargar la escena de game llamando al gestor
         Application.Quit();
     }
+
+    public void botonJugarFacil()
+    {
+        //cargar la escena de game llamando al gestor
+        PlayerPrefs.SetInt("PuntuacionPartida", 0);
+        SceneManager.LoadScene("GameFacil");
+
+
+    }
+    public void botonSeleccionarDificultad()
+    {
+        PlayerPrefs.SetInt("PuntuacionPartida", 0);
+        //cargar la escena de game llamando al gestor
+        SceneManager.LoadScene("Dificultad");
+    }
 }

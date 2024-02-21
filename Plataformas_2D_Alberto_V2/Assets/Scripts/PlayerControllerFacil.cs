@@ -70,7 +70,7 @@ public class PlayerControllerFacil : MonoBehaviour
         puntosMax = PlayerPrefs.GetInt("PuntuacionMaxima",0);
         maxPuntosTexto.text = ("MAX: " + puntosMax.ToString());
         //guardar los puntos de cada partida individual
-        puntosPartida = PlayerPrefs.GetInt("PuntuacionPartida", 0);
+        PlayerPrefs.SetInt("PuntuacionPartida", 0);
 
 
     }

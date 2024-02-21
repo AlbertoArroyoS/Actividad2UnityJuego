@@ -810,7 +810,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 43781291}
         m_TargetAssemblyTypeName: Final, Assembly-CSharp
-        m_MethodName: botonJugar
+        m_MethodName: botonSeleccionarDificultad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -20,8 +20,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalGanar.unity
     guid: 2974a5eea4dfdfc418373b92831b7cd5
-  - enabled: 1
-    path: Assets/Scenes/FinalGanarFacil.unity
-    guid: c89e04c58a2ede848a2402e1feec71de
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
