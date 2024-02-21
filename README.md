@@ -16,6 +16,8 @@ REQUISITO
 
 # Escena inicial de introducción al juego
 
+![Imagen](imgReadme/)
+
 # Cambiar todos los sprites y fondos del juego
 
 
@@ -37,4 +39,4 @@ REQUISITO
 
 # Cambiar el splash por defecto de Unity
 
-
+![Imagen](imgReadme/Splash/splash.gif)
