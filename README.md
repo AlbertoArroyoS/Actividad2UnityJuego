@@ -13,7 +13,9 @@ para poder celebrar el cumpleaños de Erika.
 
 Pinocho tiene animación al moverse, esperar, saltar.
 
+Ataque de pinocho con patada pulsando espacio
 
+![Imagen](imgReadme/patada.png)
 
 
 # REQUISITOS DE LA ACTIVIDAD
