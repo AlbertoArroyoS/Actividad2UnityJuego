@@ -7,6 +7,9 @@ Actividad Realizada por:
 ###  Alberto Arroyo Santofimia
 
 
+https://github.com/AlbertoArroyoS/Actividad2UnityJuego/assets/122359692/d48d2587-aa3a-4325-a136-0d0533f3de65
+
+
 
 El juego consiste en conseguir el anillo de la Princesa Erika y llevarlo a su cofre
 para poder celebrar el cumpleaños de Erika.
