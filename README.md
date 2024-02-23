@@ -7,7 +7,8 @@ Actividad Realizada por:
 ###  Alberto Arroyo Santofimia
 
 
-https://github.com/AlbertoArroyoS/Actividad2UnityJuego/assets/122359692/d48d2587-aa3a-4325-a136-0d0533f3de65
+
+https://github.com/AlbertoArroyoS/Actividad2UnityJuego/assets/122359692/e89aefb0-42cb-4f4e-add7-2ae2eaefdbfa
 
 
 
