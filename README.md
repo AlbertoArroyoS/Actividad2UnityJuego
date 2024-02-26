@@ -6,7 +6,7 @@ Actividad Realizada por:
 
 ###  Alberto Arroyo Santofimia
 
-
+# LAS AVENTURAS DE PINOCHO & ERIKA 
 
 https://github.com/AlbertoArroyoS/Actividad2UnityJuego/assets/122359692/e89aefb0-42cb-4f4e-add7-2ae2eaefdbfa
 
